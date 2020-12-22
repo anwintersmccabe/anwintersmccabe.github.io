@@ -974,10 +974,26 @@ left: 0px;
     margin-left: 15px
 }
 
-.project__name a{
+.project__name{
   color: #10265e;
   font-family: Inconsolata, monospace;
   font-size: 18px;
+}
+
+.project__name .highlight-link{
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 3px;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -3px 0 #10265e;
+  box-shadow: inset 0 -3px 0 #10265e;
+}
+.project__name .highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #10265e;
+    box-shadow: inset 0 -33px 0 0 #10265e;
+    color: #fff
 }
 .featured-projects a:after {
     display: none

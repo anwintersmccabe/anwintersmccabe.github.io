@@ -1,6 +1,3 @@
-function scrollWin() {
-  window.scrollBy(0, 750);
-}
 
 $(function () {
     const introHeight = document.querySelector('.intro').offsetHeight;
@@ -17,6 +14,13 @@ $(function () {
 
     topButton.addEventListener('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
+    });
+
+    const sectionButton = document.getElementById('section-button');
+    const $sectionButton = $('#section-button');
+    var hash = $('#section.section.background');
+    sectionButton.addEventListener('click', function () {
+        $('html, body').animate({ scrollTop: $(hash).offset().top }, 500);
     });
 
     const hand = document.querySelector('.emoji.wave-hand');
