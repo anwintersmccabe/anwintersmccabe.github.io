@@ -4,5 +4,5 @@ Personal Website
 
 ```
 name  := "Annabel Winters-McCabe"
-email := "anwintersmccabe@davidson.edu"
+email := "awintersmccabe@gmail.com"
 ```
